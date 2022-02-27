@@ -7,8 +7,7 @@
 bool checkPrime(uint64_t value) {
 	if ((value % 2 == 0 && value != 2) || value == 1) {
 		return false;
-	}
-	else {
+	} else {
 		float limit = pow(value, 0.5);
 		for (uint32_t i = 3; i <= limit; i += 2) {
 			if (value % i == 0) {
@@ -45,3 +44,5 @@ uint64_t sumPrime(uint64_t hbound) {
 	}
 	return sum;
 }
+
+	
